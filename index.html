@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAHAKAL MUSIC</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/9d38bf67e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="loading">
+      <svg width="64px" height="48px">
+        <polyline
+          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+          id="back"
+        ></polyline>
+        <polyline
+          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+          id="front"
+        ></polyline>
+      </svg>
+    </div>
+    <div id="restriction-message">
+      <p id="message-text"></p>
+    </div>
+    <div class="wrapper">
+      <div class="top-bar">
+        <a href="https://www.youtube.com/@Mahakal.musicc" target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <span>Now Playing</span>
+        <a
+          href="https://instagram.com/_.riq.de3?igsh=bm03ajhkajFtcG43"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <div class="img-area">
+        <img src="" alt="" />
+      </div>
+      <div class="song-details">
+        <p class="name"></p>
+        <p class="artist"></p>
+      </div>
+      <div class="progress-area">
+        <div class="progress-bar">
+          <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="max-duration">0:00</span>
+        </div>
+      </div>
+      <div class="controls">
+        <i id="repeat-plist" class="material-icons" title="Playlist looped"
+          >repeat</i
+        >
+        <i id="prev" class="material-icons">skip_previous</i>
+        <div class="play-pause">
+          <i class="material-icons play">play_arrow</i>
+        </div>
+        <i id="next" class="material-icons">skip_next</i>
+        <i id="more-music" class="material-icons">queue_music</i>
+      </div>
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span>Music list</span>
+          </div>
+          <i id="close" class="material-icons">close</i>
+        </div>
+        <ul>
+          <!-- here li list are coming from js -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/music-list.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/disaKey.js"></script>
+  </body>
+</html>
