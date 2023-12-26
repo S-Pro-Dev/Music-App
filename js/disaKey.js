@@ -5,12 +5,12 @@ document.addEventListener("contextmenu", function (e) {
 });
 
 // Show message on F12 key press
-document.addEventListener("keydown", function (e) {
-  if (e.key === "F12" || e.keyCode === 123) {
-    e.preventDefault();
-    showRestrictionMessage("F12 key is restricted on this page.");
-  }
-});
+// document.addEventListener("keydown", function (e) {
+//   if (e.key === "F12" || e.keyCode === 123) {
+//     e.preventDefault();
+//     showRestrictionMessage("F12 key is restricted on this page.");
+//   }
+// });
 
 // Show message on CTRL + U key press
 document.addEventListener("keydown", function (e) {
