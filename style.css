@@ -31,7 +31,6 @@ body {
 /* loading Sppiner */
 
 .loading {
-  z-index: 9999;
   position: fixed;
   top: 50%;
   left: 50%;
